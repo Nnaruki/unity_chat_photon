@@ -3700,7 +3700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe2c70b509254cdc8f0898247f4b12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerUiPrefab: {fileID: 0}
+  PlayerUiPrefab: {fileID: 1554865934121601710, guid: 6a8a590dd06ded64d9709534bfeec8eb, type: 3}
   HP: 100
 --- !u!1 &7163832632579824828
 GameObject:
