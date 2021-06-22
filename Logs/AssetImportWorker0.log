@@ -1,0 +1,185 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/naruki/chat_test_photon 2
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54445
+Successfully changed project path to: /Users/naruki/chat_test_photon 2
+/Users/naruki/chat_test_photon 2
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 40.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/naruki/chat_test_photon 2/Assets
+GfxDevice: creating device client; threaded=0
+2021-06-22 21:47:21.027 Unity[27771:391129] (null) preferred device: Apple M1 (high power)
+2021-06-22 21:47:21.027 Unity[27771:391129] Metal devices available: 1
+2021-06-22 21:47:21.027 Unity[27771:391129] 0: Apple M1 (high power)
+2021-06-22 21:47:21.028 Unity[27771:391129] Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56771
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000381 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 37.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.644 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002535 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.225 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1589 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.7 MB.
+System memory in use after: 158.8 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2033.
+Total: 1.988209 ms (FindLiveObjects: 0.165875 ms CreateObjectMapping: 0.032125 ms MarkObjects: 1.466417 ms  DeleteObjects: 0.323000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Script/ChatManager.cs
+  artifactKey: Guid(bc3ef56ddfb814677b47fa589d733f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Script/ChatManager.cs using Guid(bc3ef56ddfb814677b47fa589d733f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '756ab370c30e45296f908c5df32aea17') in 0.322857 seconds
+  Import took 0.325173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.676308 seconds.
+  path: Assets/Resources/Script/ChatManager.cs
+  artifactKey: Guid(bc3ef56ddfb814677b47fa589d733f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Script/ChatManager.cs using Guid(bc3ef56ddfb814677b47fa589d733f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51085da000881faca8e19c8db960065') in 0.006267 seconds
+  Import took 0.019776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006582 seconds.
+  path: Assets/Resources/Script/ChatManager.cs
+  artifactKey: Guid(bc3ef56ddfb814677b47fa589d733f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Script/ChatManager.cs using Guid(bc3ef56ddfb814677b47fa589d733f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51085da000881faca8e19c8db960065') in 0.002206 seconds
+  Import took 0.006610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.953636 seconds.
+  path: Assets/Resources/Script/InRoomChat.cs
+  artifactKey: Guid(bc3ef56ddfb814677b47fa589d733f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Script/InRoomChat.cs using Guid(bc3ef56ddfb814677b47fa589d733f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247728a3fdd0e10a887e7d5208863c26') in 0.003932 seconds
+  Import took 0.020999 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002744 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.254 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1571 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 161.9 MB.
+System memory in use after: 162.0 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2035.
+Total: 2.230042 ms (FindLiveObjects: 0.125875 ms CreateObjectMapping: 0.029833 ms MarkObjects: 1.987250 ms  DeleteObjects: 0.086291 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 98.526568 seconds.
+  path: Assets/Photon Unity Networking/UtilityScripts
+  artifactKey: Guid(90d17bf306078764992307b159f06ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon Unity Networking/UtilityScripts using Guid(90d17bf306078764992307b159f06ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57f61948e6dae96c4eedcda3dfa4e4e5') in 0.004527 seconds
+  Import took 0.006455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043233 seconds.
+  path: Assets/Photon Unity Networking/UtilityScripts
+  artifactKey: Guid(90d17bf306078764992307b159f06ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon Unity Networking/UtilityScripts using Guid(90d17bf306078764992307b159f06ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57f61948e6dae96c4eedcda3dfa4e4e5') in 0.000629 seconds
+  Import took 0.002413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.109939 seconds.
+  path: Assets/Photon Unity Networking/UtilityScripts/InRoomChat.cs
+  artifactKey: Guid(043bd8ce63fde7c41a9ee103809fa981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon Unity Networking/UtilityScripts/InRoomChat.cs using Guid(043bd8ce63fde7c41a9ee103809fa981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a47c52cee014d5ba748d5049f4f8d19d') in 0.003026 seconds
+  Import took 0.007084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016899 seconds.
+  path: Assets/Photon Unity Networking/UtilityScripts/InRoomChat.cs
+  artifactKey: Guid(043bd8ce63fde7c41a9ee103809fa981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon Unity Networking/UtilityScripts/InRoomChat.cs using Guid(043bd8ce63fde7c41a9ee103809fa981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a47c52cee014d5ba748d5049f4f8d19d') in 0.001823 seconds
+  Import took 0.003709 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002671 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.330 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1571 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.2 MB.
+System memory in use after: 162.3 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2038.
+Total: 1.407417 ms (FindLiveObjects: 0.124416 ms CreateObjectMapping: 0.030959 ms MarkObjects: 1.173500 ms  DeleteObjects: 0.077583 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.116159 seconds.
+  path: Assets/Photon Unity Networking/UtilityScripts/InRoomChat.cs
+  artifactKey: Guid(043bd8ce63fde7c41a9ee103809fa981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon Unity Networking/UtilityScripts/InRoomChat.cs using Guid(043bd8ce63fde7c41a9ee103809fa981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84229cec40780e2a56e05b30561ea67a') in 0.006168 seconds
+  Import took 0.008348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.607046 seconds.
+  path: Assets/Photon Unity Networking/UtilityScripts/InRoomChat.cs
+  artifactKey: Guid(043bd8ce63fde7c41a9ee103809fa981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon Unity Networking/UtilityScripts/InRoomChat.cs using Guid(043bd8ce63fde7c41a9ee103809fa981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84229cec40780e2a56e05b30561ea67a') in 0.001793 seconds
+  Import took 0.004457 seconds .
+
