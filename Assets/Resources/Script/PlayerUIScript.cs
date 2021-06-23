@@ -9,7 +9,7 @@ using System.Collections;
         #region Public Properties
 
         //キャラの頭上に乗るように調整するためのOffset
-        public Vector3 ScreenOffset = new Vector3(0f, 30f, 0f);
+        public Vector3 ScreenOffset = new Vector3(0f, 50f, 0f);
 
         //プレイヤー名前設定用Text
         public Text PlayerNameText;

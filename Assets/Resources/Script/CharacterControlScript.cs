@@ -20,6 +20,10 @@ public class CharacterControlScript : MonoBehaviour {
     public float rotateSpeed;   //キャラクターの方向転換速度
     public float gravity;       //キャラにかかる重力の大きさ
 
+    private float lookUpAngle;
+    private float flyingTime = 0f;
+    private bool isFlying;
+
     Vector3 targetDirection;        //移動する方向のベクトル
     Vector3 moveDirection = Vector3.zero;
 
@@ -46,10 +50,15 @@ public class CharacterControlScript : MonoBehaviour {
 
         //カメラの方向を考慮したキャラの進行方向を計算
         targetDirection = h * right + v * forward;
+        if (controller.isGrounded || isFlying){
+            moveDirection = new Vector3 (h*5, 0, v*5);
+            moveDirection = transform.TransformDirection (moveDirection);
+        }
 
      //★地上にいる場合の処理
         if (controller.isGrounded)      
         {
+            isFlying = false;
             //移動のベクトルを計算
             moveDirection = targetDirection*speed;
 
@@ -57,15 +66,23 @@ public class CharacterControlScript : MonoBehaviour {
             if (Input.GetButton("Jump"))    
             {
                 moveDirection.y = jumpSpeed;
+                flyingTime = 0f;
             }
         }
         else        //空中操作の処理（重力加速度等）
         {
+            flyingTime += Time.deltaTime;
             float tempy = moveDirection.y;
             //(↓の２文の処理があると空中でも入力方向に動けるようになる)
-            //moveDirection = Vector3.Scale(targetDirection, new Vector3(1, 0, 1)).normalized;
-            //moveDirection *= speed;
+            moveDirection = Vector3.Scale(targetDirection, new Vector3(1, 0, 1)).normalized;
+            moveDirection *= speed;
             moveDirection.y = tempy - gravity * Time.deltaTime;
+            if (Input.GetButtonDown ("Jump")) {
+                if (flyingTime < 0.35f)
+                    isFlying = !isFlying;
+                else
+                    flyingTime = 0f;
+            }
         }
 
      //★走行アニメーション管理
@@ -77,6 +94,13 @@ public class CharacterControlScript : MonoBehaviour {
         {
             animator.SetFloat("Speed", 0f); //キャラ走行のアニメーションOFF
         }
+        
+        if (isFlying)
+            moveDirection.y = Input.GetButton ("Jump") ? 0.8f * jumpSpeed : 0f;
+        else
+            moveDirection.y -= gravity * Time.deltaTime;    //重力の効果
+        controller.Move(moveDirection * Time.deltaTime);    //キャラクターを移動させる
+  
     }
 
     void RotationControl()  //キャラクターが移動方向を変えるときの処理
